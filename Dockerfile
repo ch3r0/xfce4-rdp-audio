@@ -52,3 +52,9 @@ WORKDIR /nobody
 #########################################
 
 # Place whater volumes and ports you want exposed here:
+COPY xrdp.ini /etc/xrdp/xrdp.ini
+
+COPY start.sh /root/
+CMD ["/bin/bash", "/root/start.sh"]
+                                    
+EXPOSE 3389 22
