@@ -12,7 +12,7 @@ fi
 #CREATE USERS.
 # username:passsword:Y
 # username2:password2:Y
-echo "admin:root:Y" >/root/createusers.txt
+echo "admin:admi:Y" >/root/createusers.txt
 file="/root/createusers.txt"
 if [ -f $file ]
   then
